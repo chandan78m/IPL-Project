@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+.logo img{
+    height: 110px;
+    width: 70px;
+    padding: 0.3rem;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    position: sticky;
+    
+    top:0px;
+    
+    
+}
+.navbar::before{
+    
+    content: " ";
+    position: absolute;
+    background-color: black;
+    height: 102%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.5;
+}
+
+.head{
+    display: flex;
+
+    height: 80px;
+    padding: 5px 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .head ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin :4px 30px;
+    padding: 3px 20px;
+    
+    
+    
+}
+.navbar .head ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navbar .head ul li a{
+    margin: 3px 30px;
+    padding :5px 12px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 17px;
+    background-color:  rgb(146 176 230);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar .head ul li a:hover{
+    display: flex;
+    
+    background-color: rgb(66, 99, 99);
+    color: white;
+}
+#section {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#section h2 {
+    border: 2px solid rgb(22, 21, 21);
+    background-color: rgb(246 192 155);
+    display: flex;
+    color: rgb(120 118 79);
+    font-size: 5rem;
+    border-radius: 40px;
+}
+#section::before{ 
+    content: "";
+    position: absolute;
+    background: url('ipl_logo.jpg') no-repeat center center/cover;
+    height: 850px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+.box{
+    display: flex;
+    
+}
+.item1{
+    
+    display: flex;
+font-size: 33px;
+    margin: 4px 10px;
+    padding: 9px 40px;
+     justify-content: center;
+    /* align-items: center; */
+    border: 2px solid black;
+    height: 170px;
+    width: 230px;
+    background: url('trophy.jpg');
+    opacity: 0.85;
+    border-radius: 40px;
+}
+#winner1:hover{
+    background: url('mi.jpg') center center/cover;
+    color: blue;
+
+    
+}
+#winner2:hover{
+    background: url('csk.jpg') center center/cover;
+    color: yellow;
+    
+}
+#winner3:hover{
+    background: url('kkr.jpg') center center/cover;
+    color: rgb(174, 189, 44);
+}
+#winner4:hover{
+    background: url('rr.jpg') center center/cover;
+    color: pink;
+    
+}
+#winner5:hover{
+    background: url('srh.jpg') center center/cover;
+    color: orange;
+    
+}
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'box1 blank blank blank box5'
+    'box2 main main main box6'
+    'box3 main main main box7'
+    'box4 blank2 blank2 blank2 box8';
+}
+.all{
+    /* background:yellow; */
+    display:grid;
+    height: 140px;
+    border: 2px solid red;
+    margin: 2px 57px ;
+    padding: 4px 5px;
+    border-radius: 30px;
+}
+#blank{
+    /* display: grid; */
+    grid-area: blank;
+}
+#blank2{
+    
+    grid-area: blank2;
+}
+#main{
+    
+    grid-area: main;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color:#2b2a97;
+
+}
+#box1{
+    grid-area: box1;
+    background: url('mi.jpg') no-repeat center center/cover ;
+
+}
+#box2{
+     grid-area: box2;
+     background: url('rcb.png') no-repeat center center/cover ;
+    
+    }
+    #box3{
+     grid-area: box3;
+     background: url('kp.jpg') no-repeat center center/cover ;
+    
+    }
+    #box4{
+        grid-area: box4;
+        background: url('rr.jpg') no-repeat center center/cover ;
+    
+
+    } 
+#box5{
+    grid-area: box5;
+    background: url('csk.jpg') no-repeat center center/cover ;
+
+}
+#box6{
+    grid-area: box6;
+    background: url('srh.jpg') no-repeat center center/cover ;
+
+}
+#box7{
+     grid-area: box7;
+     background: url('dc1.jpg') no-repeat center center/cover ;
+    
+    }
+    #box8{
+     grid-area: box8;
+     background: url('kkr.jpg') no-repeat center center/cover ;
+    
+    }
+ .container::before{
+     content: "";
+     position: absolute;
+     height: 686px;
+    width: 100%;
+     background: url('ipl_bg2.jpg') no-repeat center center/cover;
+     z-index: -1;
+     opacity: 0.7;
+ }
+input[type="text"]{
+        display: flex;
+        font-size: 30px;
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 20px 20px;
+        padding: 17px 17px
+}
+.form_head{
+    display: flex;
+    width: 600px;
+    margin: 40px 20px;
+    padding: 5px 8px;
+}
+.button{
+    font-size: 30px;
+    width: 134px;
+    height: 49px;
+    margin: 10px 19px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: violet;
+}
+.button:hover{
+    background-color: rgb(165, 92, 165);
+    cursor:pointer ;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
